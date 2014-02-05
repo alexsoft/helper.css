@@ -1,0 +1,12 @@
+.paddings(1, t, top);
+.paddings(1, r, right);
+.paddings(1, b, bottom);
+.paddings(1, l, left);
+
+.paddings(@i, @l, @t) when (@i <= 20) {
+	@k: @i * 5;
+	.p@{l}@{k} {
+		padding-@{t}: ~"@{k}px";
+	};
+	.paddings(@i+1, @l, @t);
+}
