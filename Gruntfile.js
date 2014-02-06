@@ -38,11 +38,28 @@ module.exports = function(grunt) {
 					]
 				}
 			}
+		},
+
+		bump: {
+			options: {
+				files: ['package.json', 'bower.json'],
+				updateConfigs: [],
+				commit: true,
+				commitMessage: 'helper v%VERSION%',
+				commitFiles: ['-a'], // '-a' for all files
+				createTag: true,
+				tagName: 'v%VERSION%',
+				// tagMessage: 'Version %VERSION%',
+				push: false,
+				pushTo: 'upstream',
+				gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-banner');
+	grunt.loadNpmTasks('grunt-bump');
 
 	grunt.registerTask('default', ['less', 'usebanner']);
 };

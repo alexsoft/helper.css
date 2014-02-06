@@ -1,6 +1,6 @@
 {
 	"name": "helper.css",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"homepage": "http://github.com/alexsoft/helper.css",
 	"repository": {
 		"type": "git",
@@ -12,6 +12,7 @@
 		"grunt": "*",
 		"grunt-banner": "~0.2.0",
 		"grunt-contrib-cssmin": "*",
-		"grunt-contrib-less": "~0.9.0"
+		"grunt-contrib-less": "~0.9.0",
+		"grunt-bump": "~0.0.13"
 	}
 }
