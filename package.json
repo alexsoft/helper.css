@@ -9,9 +9,9 @@
 	"author": "Alex Plekhanov",
 	"license": "MIT",
 	"devDependencies": {
-		"grunt": "*",
+		"grunt": "~0.4.2",
 		"grunt-banner": "~0.2.0",
-		"grunt-contrib-cssmin": "*",
+		"grunt-contrib-cssmin": "~0.7.0",
 		"grunt-contrib-less": "~0.9.0",
 		"grunt-bump": "~0.0.13"
 	}
