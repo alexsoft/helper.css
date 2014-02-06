@@ -1,0 +1,10 @@
+.fs0 {font-size: 0;}
+
+.fontsize(1);
+
+.fontsize(@i) when (@i <= 50) {
+	.fs@{i} {
+		font-size: ~"@{i}px";
+	}
+	.fontsize(@i+1);
+}

@@ -44,16 +44,16 @@ module.exports = function(grunt) {
 			options: {
 				files: ['package.json', 'bower.json'],
 				updateConfigs: [],
-				commit: true,
+				commit: false,
 				commitMessage: 'helper v%VERSION%',
 				commitFiles: ['-a'], // '-a' for all files
-				createTag: true,
+				createTag: false,
 				tagName: 'v%VERSION%',
 				// tagMessage: 'Version %VERSION%',
 				push: false,
 				pushTo: 'upstream',
 				gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
-			}
+			},
 		}
 	});
 
