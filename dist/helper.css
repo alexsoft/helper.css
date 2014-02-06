@@ -1,5 +1,5 @@
 /*!
- * helper.css v0.0.1 (http://github.com/alexsoft/helper.css)
+ * helper.css v0.0.2 (http://github.com/alexsoft/helper.css)
  * Copyright 2014 Alex Plekhanov
  * Licensed under MIT
  */
@@ -788,4 +788,49 @@
 }
 .lh50 {
   line-height: 50px;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.fnone {
+  float: none;
+}
+.tar {
+  text-align: right;
+}
+.tal {
+  text-align: left;
+}
+.tac {
+  text-align: center;
+}
+.taj {
+  text-align: justify;
+}
+.cp {
+  cursor: pointer;
+}
+.cd {
+  cursor: default;
+}
+.tdn {
+  text-decoration: none;
+}
+.tdu {
+  text-decoration: underline;
+}
+.fwb {
+  font-weight: 700;
+}
+.fwn {
+  font-weight: 400;
+}
+.upc {
+  text-transform: uppercase;
+}
+.lwc {
+  text-transform: lowercase;
 }

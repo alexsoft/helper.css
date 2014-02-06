@@ -2,14 +2,14 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-
 		banner: '/*!\n' +
 				' * helper.css v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
 				' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
 				' * Licensed under <%= pkg.license %>\n' +
 				' */',
+
 		less: {
-			dev: {
+			dist: {
 				options: {
 					cleancss: false
 				},
@@ -62,4 +62,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bump');
 
 	grunt.registerTask('default', ['less', 'usebanner']);
+	grunt.registerTask('bumper', ['less', 'usebanner', 'bump']);
 };
